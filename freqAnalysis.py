@@ -11,7 +11,7 @@ def toLower(char):
         return char
 
 def lenghtofText(text):
-    lenghtoftext=0.00
+    lenghtoftext=0
     for char in text:
         lenghtoftext+=1
 
