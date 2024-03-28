@@ -1,7 +1,7 @@
-import odev2_freqanalysis as analysis
+import freqAnalysis as analysis
 
 def main():
-    userInput=input("Metin giriniz: ")
+    userInput=input("Enter a text: ")
     frequency_percentages = analysis.calculate_freq(userInput)
 
     for char, percentage in frequency_percentages.items():
