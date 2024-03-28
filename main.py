@@ -1,12 +1,12 @@
 import freqAnalysis as analysis
 
 def main():
-    userInput=input("Enter a text: ")
-    frequency_percentages = analysis.calculate_freq(userInput)
+    userInput=input("Metin giriniz: ")
+    freq = analysis.calculate_freq(userInput)
 
-    for char, percentage in frequency_percentages.items():
-        numberofused=int(percentage*analysis.lenghtofText(userInput))
-        print(f"{char} number of used {numberofused} - using percentage: {percentage:.2%}")
+    for char in freq:
+        totalchars=analysis.lenghtofText(userInput)
+        print(f"{char} number of used {freq[char]} - using percentage: {(freq[char]/totalchars)*100}%")
 
 if __name__ == "__main__":
     main()
