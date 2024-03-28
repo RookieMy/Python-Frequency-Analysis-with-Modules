@@ -19,15 +19,11 @@ def lenghtofText(text):
 
 def calculate_freq(text):
     freq = {char: 0 for char in 'abcçdefgğhıijklmnoöprsştuüvyz'}
-    total_letters = 0
     
     for char in text:
         if isLetter(char):
             charLower=toLower(char)
             if charLower in freq:
                 freq[charLower]+=1
-                total_letters+=1
 
-    total_letters=max(total_letters,1)
-
-    return {char: freq[toLower(char)] / total_letters for char in freq}
+    return freq
