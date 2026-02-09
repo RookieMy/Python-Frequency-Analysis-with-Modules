@@ -26,9 +26,11 @@ The script counts how many times each letter appears in a given text.
 ## Usage Example
 
 ## Input
+```input
 İstanbul çok güzel bir şehir
-
+```
 ## Output
+```output
 {
   "a number of used" : 1 - using percentage: 3.571428571428571%,
   "b number of used" : 2 - using percentage: 7.142857142857142%,
@@ -60,7 +62,7 @@ The script counts how many times each letter appears in a given text.
   "y number of used" : 0 - using percentage: 0.0%,
   "z number of used" : 1 - using percentage: 3.571428571428571%
 }
-
+```
 ---
 
 ## How to run
